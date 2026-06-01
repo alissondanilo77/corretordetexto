@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corretor de te texto ortográfico gratuito DOMINI IA</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Corretor de texto ortográfico gratuito DOMINI IA</h1>
+
+        <p class="subtitle">Sugestões de ortografia/gramática via LanguageTool (API online).</p>
+      </header>
+
+      <section class="card">
+        <label for="texto">Digite seu texto</label>
+        <textarea id="texto" placeholder="Escreva aqui..."></textarea>
+
+        <div class="row">
+          <div class="field">
+            <label for="lang">Idioma</label>
+            <select id="lang">
+              <option value="pt">Português (pt)</option>
+              <option value="en-US">Inglês (en-US)</option>
+              <option value="es">Espanhol (es)</option>
+              <option value="fr">Francês (fr)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>&nbsp;</label>
+            <button id="btnCorretor">Corrigir</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Resultado</h2>
+        <div id="status" class="status" aria-live="polite"></div>
+        <div class="result">
+          <div>
+            <h3>Versão sugerida</h3>
+            <pre id="saida" class="pre">—</pre>
+          </div>
+        </div>
+
+        <details class="details" open>
+          <summary>Ver ocorrências</summary>
+          <div id="ocorrencias" class="occ"></div>
+        </details>
+      </section>
+
+      <footer class="footer">
+        <small>Observação: para usar o corretor, este projeto precisa de um servidor local (Node) para fazer a chamada à API com segurança.</small>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
