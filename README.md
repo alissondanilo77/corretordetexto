@@ -1,9 +1,13 @@
 # Corretor de Texto (LanguageTool API)
 
+> Configurado para deploy no Vercel a partir do diretório `corretordetexto`.
+
 ## O que é
 Um corretor simples em HTML/JS que chama a LanguageTool API via um servidor Node local.
 
 > Observação: para chamadas reais à API, pode ser necessário uma **chave (token)** dependendo do plano/instância.
+
+> Nota: O deploy no Vercel utiliza `vercel.json` para construir o app no subdiretório `corretordetexto`.
 
 ## Como rodar
 1. Instale Node.js (se ainda não tiver)

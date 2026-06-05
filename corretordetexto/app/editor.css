@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+.editor-root {
+  @apply relative outline-none;
+}
+
+.editor-content {
+  @apply min-h-80 py-4 px-0 relative z-10 focus:outline-none resize-none overflow-hidden;
+  caret-color: #1f2937;
+  line-height: 1.6;
+}
+
+.editor-placeholder {
+  @apply absolute top-4 left-0 text-gray-400 pointer-events-none;
+}
+
+.editor-text-bold {
+  @apply font-bold;
+}
+
+.editor-text-italic {
+  @apply italic;
+}
+
+.editor-text-underline {
+  @apply underline;
+}
+
+/* Underline for errors */
+.underline-error {
+  @apply underline decoration-red-500 decoration-wavy;
+}

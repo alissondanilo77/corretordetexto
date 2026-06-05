@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "installCommand": "npm install --prefix corretordetexto",
+  "buildCommand": "npm --prefix corretordetexto run build",
+  "builds": [
+    {
+      "src": "corretordetexto/package.json",
+      "use": "@vercel/next"
+    }
+  ]
+}

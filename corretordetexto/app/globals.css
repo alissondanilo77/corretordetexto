@@ -1,20 +1,23 @@
 @import "tailwindcss";
 
 :root{
-  --color-1:#0d0805;
-  --color-2:#332012;
-  --color-3:#59391e;
-  --color-4:#80512a;
-  --color-5:#a86936;
+  --color-1:#323232; /* cinza escuro */
+  --color-2:#3b2a23; /* marrom profundo */
+  --color-3:#6b4a3a;
+  --color-4:#a66a3f;
+  --color-5:#DDD0C8; /* bege */
+
 
   /* mantendo os vars existentes para não quebrar o layout */
   --bg: var(--color-1);
-  --card: var(--color-2);
-  --text: #f7efe7;
-  --muted: rgba(247,239,231,.75);
-  --border: rgba(255,255,255,.12);
-  --accent: var(--color-4);
-  --accent2: var(--color-5);
+  --card: rgba(221,208,200,0.06);
+  --text: #DDD0C8;
+  --muted: rgba(221,208,200,.74);
+
+  --border: rgba(221,208,200,.18);
+  --accent: #a66a3f;
+  --accent2: #DDD0C8;
+
   --danger: #ff5c7a;
   --ok: #35e38b;
 }

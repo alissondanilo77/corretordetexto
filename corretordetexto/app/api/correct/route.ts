@@ -1,23 +1,23 @@
 import { NextResponse } from "next/server";
 
-import type { CorrectionMatch, CorrectionResponse } from "../../types/correction";
+import type { CorrectionMatch, CorrectionResponse } from "../../../types/correction";
 
 type LTReplacement = {
-value: string;
+  value: string;
 };
 
 type LTMatch = {
-offset: number;
-length: number;
-replacements: LTReplacement[];
-message?: string;
-rule?: {
-id?: string;
-};
+  offset: number;
+  length: number;
+  replacements: LTReplacement[];
+  message?: string;
+  rule?: {
+    id?: string;
+  };
 };
 
 type LTResponse = {
-matches?: LTMatch[];
+  matches?: LTMatch[];
 };
 
 export async function POST(req: Request) {
