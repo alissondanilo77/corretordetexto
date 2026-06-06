@@ -24,13 +24,7 @@ export default function UnderlinePlugin() {
       editor.update(() => {
         const root = $getRoot();
         const allNodes = root.getAllTextNodes();
-        
-        // Reset all nodes first
-        allNodes.forEach((node) => {
-          if (node.__class === 'TextNode') {
-            node.__text = node.__text; // Force update
-          }
-        });
+
 
         // Rebuild text with error tracking
         let currentOffset = 0;
